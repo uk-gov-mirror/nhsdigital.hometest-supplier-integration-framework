@@ -34,7 +34,7 @@ jobs:
         id: vars
         run: |
           echo "fhir_version=${{ inputs.fhir_version || '4.0.1' }}" >> "$GITHUB_OUTPUT"
-          echo "validator_version=${{ inputs.validator_version || '6.9.5' }}" >> "$GITHUB_OUTPUT"
+          echo "validator_version=${{ inputs.validator_version || '6.9.7' }}" >> "$GITHUB_OUTPUT"
       - name: Save PR number
         if: github.event_name == 'pull_request'
         run: |
